@@ -1,0 +1,125 @@
+{
+  "header": {
+    "title": "Social Media Dashboard",
+    "totalFollowers": "23,004"
+  },
+  "followerCards": [
+    {
+      "id": "facebook",
+      "platform": "facebook",
+      "icon": "/images/icon-facebook.svg",
+      "username": "@nathanf",
+      "count": "1987",
+      "label": "Followers",
+      "change": 12,
+      "isUp": true
+    },
+    {
+      "id": "twitter",
+      "platform": "twitter",
+      "icon": "/images/icon-twitter.svg",
+      "username": "@nathanf",
+      "count": "1044",
+      "label": "Followers",
+      "change": 99,
+      "isUp": true
+    },
+    {
+      "id": "instagram",
+      "platform": "instagram",
+      "icon": "/images/icon-instagram.svg",
+      "username": "@realnathanf",
+      "count": "11k",
+      "label": "Followers",
+      "change": 1099,
+      "isUp": true
+    },
+    {
+      "id": "youtube",
+      "platform": "youtube",
+      "icon": "/images/icon-youtube.svg",
+      "username": "Nathan F.",
+      "count": "8239",
+      "label": "Subscribers",
+      "change": 144,
+      "isUp": false
+    }
+  ],
+  "overview": {
+    "title": "Overview - Today",
+    "cards": [
+      {
+        "id": "facebook-page-views",
+        "platform": "facebook",
+        "icon": "/images/icon-facebook.svg",
+        "metric": "Page Views",
+        "count": "87",
+        "change": 3,
+        "isUp": true
+      },
+      {
+        "id": "facebook-likes",
+        "platform": "facebook",
+        "icon": "/images/icon-facebook.svg",
+        "metric": "Likes",
+        "count": "52",
+        "change": 2,
+        "isUp": false
+      },
+      {
+        "id": "instagram-likes",
+        "platform": "instagram",
+        "icon": "/images/icon-instagram.svg",
+        "metric": "Likes",
+        "count": "5462",
+        "change": 2257,
+        "isUp": true
+      },
+      {
+        "id": "instagram-profile-views",
+        "platform": "instagram",
+        "icon": "/images/icon-instagram.svg",
+        "metric": "Profile Views",
+        "count": "52k",
+        "change": 1375,
+        "isUp": true
+      },
+      {
+        "id": "twitter-retweets",
+        "platform": "twitter",
+        "icon": "/images/icon-twitter.svg",
+        "metric": "Retweets",
+        "count": "117",
+        "change": 303,
+        "isUp": true
+      },
+      {
+        "id": "twitter-likes",
+        "platform": "twitter",
+        "icon": "/images/icon-twitter.svg",
+        "metric": "Likes",
+        "count": "507",
+        "change": 553,
+        "isUp": true
+      },
+      {
+        "id": "youtube-likes",
+        "platform": "youtube",
+        "icon": "/images/icon-youtube.svg",
+        "metric": "Likes",
+        "count": "107",
+        "change": 19,
+        "isUp": false
+      },
+      {
+        "id": "youtube-total-views",
+        "platform": "youtube",
+        "icon": "/images/icon-youtube.svg",
+        "metric": "Total Views",
+        "count": "1407",
+        "change": 12,
+        "isUp": false
+      }
+    ]
+  }
+}
