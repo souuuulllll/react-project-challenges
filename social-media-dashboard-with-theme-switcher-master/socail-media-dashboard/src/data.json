@@ -14,7 +14,7 @@
       "change": 12,
       "color": "text-Green-500",
       "image" : "/images/icon-up.svg",
-      "border": "border-t-Blue-600"
+      "background": "bg-Blue-600"
     },
     {
       "id": "twitter",
@@ -26,7 +26,7 @@
       "change": 99,
       "color": "text-Green-500",
       "image" : "/images/icon-up.svg",
-      "border": "border-t-Blue-600"
+      "background": "bg-Blue-600"
     },
     {
       "id": "instagram",
@@ -38,7 +38,7 @@
       "change": 1099,
       "color": "text-Green-500",
       "image" : "/images/icon-up.svg",
-      "border": "border-t-Linear-gradient"
+      "background": "bg-linear-to-r from-Linear-gradient-Instagram via-Linear-gradient-Instagram1 to-Linear-gradient-Instagram2"
     },
     {
       "id": "youtube",
@@ -50,7 +50,7 @@
       "change": 144,
       "color": "text-Red-500",
       "image" : "/images/icon-down.svg",
-      "border": "border-t-Linear-gradient2"
+      "background": "bg-Red-700"
     }
   ],
    

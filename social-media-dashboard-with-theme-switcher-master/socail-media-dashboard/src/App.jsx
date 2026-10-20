@@ -1,10 +1,14 @@
+import { useState } from "react";
 import OverviewCards from "./components/OverviewCards";
 import SocialCards from "./components/SocialCards";
+import ThemeSwitch from "./components/ThemeSwitch";
 
 function App() {
+  const [isLightMode, setIsLightMode] = useState(false)
+
   return (
     <>
-      <div className="bg-Gray-950 min-h-screen grid place-items-center">
+      <div className={`${isLightMode ? "bg-white" : "bg-Gray-950"} min-h-screen grid place-items-center `}>
         <div className="md:min-w-5xl p-4">
           <div className="flex items-center justify-between">
             <div className="">
@@ -13,13 +17,7 @@ function App() {
               </h2>
               <p className="text-Gray-650 font-bold">Total Followers: 23,004</p>
             </div>
-            <div className="flex gap-2">
-              <p className="text-Gray-650 font-bold">Dark Mode</p>
-              <input
-                type="checkbox"
-                className="appearance-none relative w-10 h-5 bg-Red-500 outline-none rounded-2xl  transition-all duration-700 cursor-pointer checked:bg-Green-500 before:content-[''] before:absolute before:w-4 before:h-4 before:rounded-2xl before:top-0.5 before:left-0.5 before:bg-Navy-950 before:scale-110  before:transition-all before:duration-500 checked:before:left-5"
-              />
-            </div>
+            <ThemeSwitch setIsLightMode={setIsLightMode} isLightMode={isLightMode}/>
           </div>
 
           <div className="grid md:grid-cols-4 gap-4 mt-10">
