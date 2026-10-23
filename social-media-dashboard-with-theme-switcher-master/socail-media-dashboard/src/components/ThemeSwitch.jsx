@@ -1,6 +1,6 @@
 function ThemeSwitch({isLightMode, setIsLightMode}) {
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 justify-between md:justify-normal">
       <p className="text-Gray-650 font-bold">Dark Mode</p>
       <input
         type="checkbox" onClick={()=> setIsLightMode(!isLightMode)}

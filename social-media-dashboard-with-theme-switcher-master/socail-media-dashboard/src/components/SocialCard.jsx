@@ -1,12 +1,15 @@
-function SocialCard({ item }) {
+function SocialCard({ item, textColor, cardColor }) {
   return (
     <div className={`${item.background}`}>
-      <div className={`bg-Navy-950 translate-y-1  grid place-items-center py-6 rounded-xs`}>
+      <div
+        className={`${cardColor} translate-y-1  grid place-items-center py-6 rounded-xs`}
+      >
         <div className="flex items-center gap-2">
           <img src={item.icon} alt="" className="object-cover " />
           <p className="text-Gray-400 text-xs">{item.username}</p>
         </div>
-        <h2 className="text-6xl text-White font-bold mt-4">{item.count}</h2>
+        <h2 className={`text-6xl ${textColor} font-bold mt-4`}>{item.count}</h2>
+
         <p className="text-Gray-400 tracking-[.35rem] text-xs mt-2 uppercase">
           {item.label}
         </p>
