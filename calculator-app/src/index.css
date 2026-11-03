@@ -1,60 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
 @import "tailwindcss";
 
-*{
+@layer base {
+  * {
     font-family: "League Spartan", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  }
+
+  body {
+    min-width: 320px;
+    margin: 0;
+  }
+
+  button {
+    cursor: pointer;
+  }
 }
 
-@theme{
---color-Navy-900: hsl(222, 26%, 31%);
---color-Navy-900: hsl(223, 31%, 20%);
---color-Navy-950: hsl(224, 36%, 15%); 
+.theme-shell {
+  --app-bg: hsl(222, 26%, 31%);
+  --panel-bg: hsl(223, 31%, 20%);
+  --display-bg: hsl(224, 36%, 15%);
+  --text-main: hsl(0, 0%, 100%);
+  --key-bg: hsl(0, 0%, 90%);
+  --key-shadow: hsl(28, 16%, 65%);
+  --key-text: hsl(221, 14%, 31%);
+  --special-bg: hsl(225, 21%, 49%);
+  --special-shadow: hsl(224, 28%, 35%);
+  --special-text: hsl(0, 0%, 100%);
+  --accent-bg: hsl(6, 63%, 50%);
+  --accent-shadow: hsl(6, 70%, 34%);
+  --accent-text: hsl(0, 0%, 100%);
 
---color-Navy-700: hsl(225, 21%, 49%); 
---color-Navy-800: hsl(224, 28%, 35%); 
---color-Red-600: hsl(6, 63%, 50%); 
---color-Red-800: hsl(6, 70%, 34%);   
---color-Gray-200: hsl(0, 0%, 90%);  
---color-Gray-orange-400: hsl(28, 16%, 65%); 
+  background-color: var(--app-bg);
+}
 
---color-Navy-750: hsl(221, 14%, 31%);
---color-White: hsl(0, 100%, 100%);
+.theme-2 {
+  --app-bg: hsl(0, 0%, 90%);
+  --panel-bg: hsl(0, 5%, 81%);
+  --display-bg: hsl(0, 0%, 93%);
+  --text-main: hsl(60, 10%, 19%);
+  --key-bg: hsl(0, 0%, 90%);
+  --key-shadow: hsl(35, 11%, 61%);
+  --key-text: hsl(60, 10%, 19%);
+  --special-bg: hsl(185, 42%, 37%);
+  --special-shadow: hsl(185, 58%, 25%);
+  --special-text: hsl(0, 0%, 100%);
+  --accent-bg: hsl(25, 98%, 40%);
+  --accent-shadow: hsl(25, 99%, 27%);
+  --accent-text: hsl(0, 0%, 100%);
+}
 
-/* Theme 2
-Backgrounds */
---color-Gray-200: hsl(0, 0%, 90%);  
---color-Gray-300: hsl(0, 5%, 81%); 
---color-Gray-100: hsl(0, 0%, 93%); 
-
-/* Keys */
---color-Bue-500: hsl(185, 42%, 37%);  
---color-Blue-600 : hsl(185, 58%, 25%); 
---color-Orange-700: hsl(25, 98%, 40%); 
---color-Orange-800 : hsl(25, 99%, 27%);
---color-Grey-200 : hsl(0, 0%, 90%);
---color-Grey-orange-450: hsl(35, 11%, 61%);
-
-/* Text */
---color-Gray-900: hsl(60, 10%, 19%);
---color-White: hsl(0, 100%, 100%);
-
-/* Theme 3
-Backgrounds */
---color-Purple-950 : hsl(268, 75%, 9%);
---color-Purple-900: hsl(268, 71%, 12%);
-
-/* Keys */
---color-Purple-800: hsl(281, 89%, 26%);
---color-Purple-400 : hsl(285, 91%, 52%);
---color-Cyan-500 : hsl(176, 100%, 44%);
---color-Cyan-400: hsl(177, 92%, 70%);
---color-Purple-850 : hsl(268, 47%, 21%);
---color-Purple-750: hsl(290, 70%, 36%);
-
-/* Text */
---color-Yellow-300: hsl(52, 100%, 62%);
---color-Blue-950: hsl(198, 20%, 13%);
---color-White: hsl(0, 100%, 100%);
+.theme-3 {
+  --app-bg: hsl(268, 75%, 9%);
+  --panel-bg: hsl(268, 71%, 12%);
+  --display-bg: hsl(268, 71%, 12%);
+  --text-main: hsl(52, 100%, 62%);
+  --key-bg: hsl(268, 47%, 21%);
+  --key-shadow: hsl(290, 70%, 36%);
+  --key-text: hsl(52, 100%, 62%);
+  --special-bg: hsl(281, 89%, 26%);
+  --special-shadow: hsl(285, 91%, 52%);
+  --special-text: hsl(52, 100%, 62%);
+  --accent-bg: hsl(176, 100%, 44%);
+  --accent-shadow: hsl(177, 92%, 70%);
+  --accent-text: hsl(198, 20%, 13%);
 }
