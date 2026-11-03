@@ -1,11 +1,12 @@
-
-
-function ThemeSwitch() {
+function ThemeSwitch({themeMode, setThemeMode}) {
   return (
-    <div className="">
-      <img src="/images/icon-sun.svg" alt="icon" className="bg-Neutral-600 p-2 rounded-xl"/>
-    </div>
-  )
+    <img
+      src="/images/icon-sun.svg"
+      alt="icon"
+      onClick={() => setThemeMode(!themeMode)}
+      className="bg-Neutral-600 p-2 rounded-xl"
+    />
+  );
 }
 
-export default ThemeSwitch
+export default ThemeSwitch;

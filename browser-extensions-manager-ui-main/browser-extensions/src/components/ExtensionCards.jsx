@@ -1,10 +1,10 @@
 import ExtensionCard from "./ExtensionCard";
-import data from "../data.json";
-function ExtensionCards() {
+
+function ExtensionCards({textColor, cardColor, filteredExtensions}) {
   return (
     <>
-    {data.map((item, index) =>(
-      <ExtensionCard item={item} key={index}/>
+    {filteredExtensions.map((item, index) =>(
+      <ExtensionCard item={item} key={index} textColor={textColor} cardColor={cardColor} />
     ))}
     </>
   )
