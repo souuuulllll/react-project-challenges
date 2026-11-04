@@ -30,6 +30,8 @@ function App() {
   const [storedValue, setStoredValue] = useState(null);
   const [pendingOperator, setPendingOperator] = useState(null);
   const [isNewEntry, setIsNewEntry] = useState(true);
+
+
   const [currentTheme, setCurrentTheme] = useState(1);
 
   const reset = () => {
@@ -127,9 +129,9 @@ function App() {
 
   return (
     <main
-      className={`theme-shell theme-${currentTheme} grid min-h-screen place-items-center px-6 py-8 text-[var(--text-main)]`}
+      className={`theme-shell theme-${currentTheme} grid min-h-screen place-items-center px-6 py-8 text-(--text-main)`}
     >
-      <section className="w-full max-w-[33.75rem]" aria-label="Calculator">
+      <section className="w-full max-w-135" aria-label="Calculator">
         <header className="mb-6 flex items-end justify-between">
           <h1 className="text-3xl font-bold tracking-tight">calc</h1>
           <Theme

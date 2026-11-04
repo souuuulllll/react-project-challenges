@@ -37,7 +37,7 @@ function Keypad({ handleButton }) {
           type="button"
           aria-label={ariaLabel}
           onClick={() => handleButton(label)}
-          className={`flex min-h-16 items-center justify-center rounded-xl border-b-4 px-2 font-bold transition-[filter,transform] duration-100 active:translate-y-0.5 active:border-b-0 active:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-bg)] ${keyStyles[style]} ${span === 2 ? "col-span-2" : ""}`}
+          className={`flex min-h-16 items-center justify-center rounded-xl border-b-4 px-2 font-bold transition-[filter,transform] duration-100 active:translate-y-0.5 active:border-b-0 active:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-bg) ${keyStyles[style]} ${span === 2 ? "col-span-2" : ""}`}
         >
           {label}
         </button>
