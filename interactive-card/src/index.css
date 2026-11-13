@@ -1,18 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 @import "tailwindcss";
 
-*{
-font-family: "Space Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+* {
+  font-family: "Space Grotesk", sans-serif;
+  box-sizing: border-box;
 }
 
-@theme{
---color-Linear-gradient: hsl(249, 99%, 64%);
---color-Linear-gradient: hsl(278, 94%, 30%);
---color-Red-400: hsl(0, 100%, 66%);
---color-White: hsl(0, 100%, 100%);
---color-Gray-200: hsl(270, 3%, 87%);
---color-Gray-400: hsl(212, 12%, 71%);
---color-Purple-950: hsl(278, 68%, 11%);
+@theme {
+  --color-Red-400: hsl(0, 100%, 66%);
+  --color-White: hsl(0, 100%, 100%);
+  --color-Gray-200: hsl(270, 3%, 87%);
+  --color-Gray-400: hsl(212, 12%, 71%);
+  --color-Purple-950: hsl(278, 68%, 11%);
+}
+
+.custom-input-wrapper {
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 1px;
+  background: transparent;
+  transition: background 0.15s ease;
+}
+
+.custom-input-wrapper:focus-within:not(.has-error) {
+  background: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+}
+
+.custom-input {
+  width: 100%;
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: calc(0.5rem - 1px);
+  padding: 0.65rem 0.95rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: hsl(278, 68%, 11%);
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.custom-input-wrapper:focus-within:not(.has-error) .custom-input {
+  border-color: transparent;
+}
+
+.custom-input::placeholder {
+  color: hsl(212, 12%, 71%);
+  opacity: 0.75;
+}
+
+.custom-input-wrapper.has-error .custom-input {
+  border-color: hsl(0, 100%, 66%) !important;
 }
